@@ -1,0 +1,28 @@
+body {
+  background: black;
+  color: white;
+  
+}
+
+a {
+  color: cyan;
+  
+}
+h3 {
+  text-align:center;
+  font-family: "Times New Roman";
+}
+button {
+  margin-left: 50px;
+  color:blue;
+  background: black;
+  font-family: Times New Roman;
+}
+
+.lol {
+  font-size: 50px;
+  border-spacing: 2px;
+  border-color: cyan;
+  border-width: 3px;
+  
+}
