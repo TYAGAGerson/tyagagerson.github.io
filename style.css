@@ -1,28 +1,119 @@
 body {
-  background: black;
+  background-image: url("bg/grad1.png");
+  background-repeat: repeat;
+  background-attachment: relative;
+  background-size: auto 100%;
   color: white;
-  
+
 }
 
 a {
   color: cyan;
-  
+
 }
+
 h3 {
-  text-align:center;
-  font-family: "Times New Roman";
+  text-align: center;
+  font-family: "Sans-serif";
 }
+
 button {
-  margin-left: 50px;
-  color:blue;
-  background: black;
-  font-family: Times New Roman;
+  cursor: pointer;
+  border-width: 5px;
+  border-color: chocolate;
+  padding-inline: 25px;
+  padding-block: 25px;
+  margin-right: 0%;
+  color: white;
+  font-size: 20px;
+  border-style: outset;
+  background: transparent;
+  font-family: "Sans-serif";
+  border-radius: 50px;
+
+  transition: box-shadow 0.5s;
+  box-shadow: 20px 5px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background-image: url("taqfh/doc/marble.png");
+  transition: box-shadow 0.5s, border-color 0.5s;
+  border-color: white;
+  border-style: solid;
+
+  box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+button:active {
+  background-image: url("taqfh/doc/Penguin.png");
+  transition: box-shadow 0.1s;
+  border-style: inset;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 .lol {
-  font-size: 50px;
+
   border-spacing: 2px;
-  border-color: cyan;
+  border-color: rgb(255, 255, 255);
   border-width: 3px;
+  border-style: double;
+  box-sizing: border-box;
+
+}
+
+.openable {
+  display: grid;
+  border: 10px ridge white;
+  padding: 1em;
+  margin: 1em;
+  row-gap: 0px;
+
+  >label {
+    text-shadow: 2px 2px 0px black;
+    cursor: pointer;
+
+    >input[type="checkbox"] {
+      display: none;
+
+    }
+
+  }
+
+  >*:nth-child(2) {
+    overflow: hidden;
+    border-top: ridge gray 5px;
+  }
+
+  >label::before {
+    content: "  ";
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    border-style: solid;
+    background-color: blue;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  grid-template-rows: min-content 0fr;
+
+  &:has(>label input:checked) {
+    grid-template-rows: min-content 1fr;
+    > label::before{
+      background-color: green;
+      transform: rotate(45deg);
+    }
+    
+  }
   
+  transition: grid-template-rows 0.3s linear;
+}
+
+.flex-horizon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
 }
