@@ -1,17 +1,32 @@
 <!doctype html>
-  <link rel="stylesheet" href="style.css">  </link>
+  
  
 <head>
+  <link rel="stylesheet" href="style.css">  </link>
   <link rel="icon" type="image/x-icon" href="me_3.jpg"></link>
   <title>TyagaGerson's github website</title></head>
 
-<body><nav>TyagaGerson's github website</nav>
-
-<h3>my (not all-of-them) repos:</h3>
 
 
 
+<body>
+<nav id="navs" style="position: fixed;z-index: 1;">TyagaGerson's github website</nav>
 
+
+  
+<!--img src="bg/grad1.png" style="width: 100%;height: 100px; position: relative; top:0;left:0;"</img-->
+
+
+  <div style="height: 400px;">
+  <div id="heads" style="z-index: 2;">
+    <h1 style="animation: faded-in 1s ease;">Yes, it's me, TyagaGerson</h1>
+    <p  style="opacity: 0%; animation: faded-in 1s ease forwards;animation-delay: 1s">a person who does <abbr title="lol" id="gimmick">nothing.</abbr><span id="carrot">|</span></p>
+  </div>
+</div>
+
+<div id="load">
+<h5>  Loading... </h5>
+</div>
 
 
 
@@ -30,46 +45,91 @@
 <legend style="background-color: green; font-family: monospace; font-size: large; padding-block: 2px; padding-inline: 4px; box-shadow: /*inset 2px 2px 2px 1px rgba(0,0,0,0.5),*/4px 4px rgba(0,0,0,0.5) ;"> LOOK AT THIS </legend>
 </fieldset>
 
+<fieldset class="openable" style="border-style: double;">
+<label><input type="checkbox"/> My Old Scratch Games</label>
+<div class="flex-horizon-stretch">
+<div class="card-like">
+  <img src="scratch/img/2kl.png" style="width:240px;height: 180px;">
+  <h4>2 Game Kearifan Lokal Flores</h4>
+  <p>"2 Game Kearifan Lokal Flores" is a game consists of 2 minigames<br> that simulate traditional activity:</p>
+
+  <ol>
+
+    <li>
+      <h5>Bubu</h5>
+      <p>A technique on how to make a fish trap on a sustainable way</p>
+    </li>
+    <li>
+      <h5>Rangku Alu</h5>
+      <p>A traditional game where the player jump over the grid of obstacles</p>
+    </li>
+  </ol>
+  
+  <button style="margin-top: auto;" onclick="window.open('https://scratch.mit.edu/projects/1163553556/','_blank')" >Play Now</button>
+  <!--button>Learn More</button-->
+</div>
+<div class="card-like">
+  <img src="scratch/img/garsimo.png" style="width:240px;height: 180px;">
+  <h4>Garsimo's AI Story</h4>
+  <p>"Garsimo's AI Story is a story game made for IKCC Competition 2024<br> about Garsimo learning and educating AI to other people.</p>
+  <small>(and I got rank #7)</small>
 
 
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdsds
-</p>
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdds
-</p>
-<p> so 
-  dsdds
-</p>
+  
+  <button style="margin-top: auto;" onclick=" window.open('https://scratch.mit.edu/projects/1163553556/','_blank')" >Play Now</button>
+  <!--button>Learn More</button-->
+</div>
+
+<div class="card-like">
+  <img src="scratch/img/bagrace.png" style="width:240px;height: 180px;">
+  <h4>Bag Race Competition</h4>
+  <p>"Bag Race Competition is an offline multiplayer<br>sharescreen game where each player jumps while<br>using a bag to reach the line of victory.</p>
+
+
+  
+  <button style="margin-top: auto;" onclick=" window.open('https://scratch.mit.edu/projects/899251168/','_blank')" >Play Now</button>
+  <!--button>Learn More</button-->
+</div>
+
+<div class="card-like">
+
+  <h2>Other Games?</h2>
+  <p>Yes! there are some other old games you can try.<br>The button below will lead to my Scratch Projects.</p>
+
+
+  
+  <button onclick=" window.open('https://scratch.mit.edu/projects/899251168/','_blank')" >Search My Games</button>
+  <!--button>Learn More</button-->
+</div>
+
+</div>
 
 
 
 
- <link rel="script" href="main.js"></link> 
+<legend style="background-color: red; font-family: monospace; font-size: large; padding-block: 2px; padding-inline: 4px; box-shadow: /*inset 2px 2px 2px 1px rgba(0,0,0,0.5),*/4px 4px rgba(0,0,0,0.5) ;"> WARNING: CRINGE </legend>
+</fieldset>
+
+
+<h3>Seems Nothing, Huh?</h3>
+<p>yes, and I'll fill/decorate this website with something cool.</p>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+ <script src="main.js"></script>
 </body>
 <footer>
-<small style="font-family: sans-serif;">This website is made by TyagaGerson with some content derived or copied from other people.</small>
-<button onclick="location.reload()">refresh</button>
+
+<span class="flex-horizon" style="align-items: center; justify-content: space-between">
+<small style="font-family: sans-serif; justify-self:flex-start;">This website is made by TyagaGerson with some content derived or copied from other people.</small>
+<span class="flex-right-item">
+<button onclick="refresh()">refresh</button>
+<button onclick="location.href='taqfh/doc/index.html'">Tux AQFH (but modified)</button>
+</span>
+</span>
 </footer>
 </html>

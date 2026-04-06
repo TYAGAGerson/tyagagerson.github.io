@@ -1,0 +1,8 @@
+.warn {
+    background: red;
+    font-family: sans-serif;color: white; display: grid;grid-auto-flow: column;
+}
+
+body {
+    background-image: url("Penguin.png");
+}

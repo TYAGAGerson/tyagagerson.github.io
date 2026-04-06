@@ -1,18 +1,28 @@
+
+
 body {
   background-image: url("bg/grad1.png");
   background-repeat: repeat;
+  
   background-attachment: relative;
-  background-size: auto 100%;
+  background-size: auto auto;
   color: white;
+  /*todo:change this*/
+ 
 
 }
+html{
+  overscroll-behavior: none; 
+}
+
+
 
 a {
   color: cyan;
 
 }
 
-h3 {
+h1 {
   text-align: center;
   font-family: "Sans-serif";
 }
@@ -21,11 +31,11 @@ button {
   cursor: pointer;
   border-width: 5px;
   border-color: chocolate;
-  padding-inline: 25px;
-  padding-block: 25px;
+  padding-inline: 5px;
+  padding-block: 5px;
   margin-right: 0%;
   color: white;
-  font-size: 20px;
+  font-size: medium;
   border-style: outset;
   background: transparent;
   font-family: "Sans-serif";
@@ -34,6 +44,53 @@ button {
   transition: box-shadow 0.5s;
   box-shadow: 20px 5px 0px 0px rgba(0, 0, 0, 0.25);
 }
+
+.link-button {
+  cursor: pointer;
+  text-decoration: none;
+  border-width: 5px;
+  border-color: chocolate;
+  padding-inline: 5px;
+  padding-block: 5px;
+  margin-right: 0%;
+  color: white;
+  font-size: medium;
+  border-style: outset;
+  background: transparent;
+  font-family: "Sans-serif";
+  border-radius: 50px;
+
+  transition: box-shadow 0.5s;
+  box-shadow: 20px 5px 0px 0px rgba(0, 0, 0, 0.25);
+
+
+&:hover {
+  background-image: url("taqfh/doc/marble.png");
+  transition: box-shadow 0.5s, border-color 0.5s;
+  border-color: white;
+  border-style: solid;
+
+  box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+&:focus {
+  background: transparent;
+  transition: box-shadow 0.5s;
+  box-shadow: 20px 5px 0px 0px rgba(0, 0, 0, 0.25);
+  border-style: inset;
+}
+
+&:active {
+  background-image: url("taqfh/doc/Penguin.png");
+  transition: box-shadow 0.1s;
+  border-style: inset;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+}
+
 
 button:hover {
   background-image: url("taqfh/doc/marble.png");
@@ -65,7 +122,7 @@ button:active {
 
 .openable {
   display: grid;
-  border: 10px ridge white;
+  border: 5px solid white;
   padding: 1em;
   margin: 1em;
   row-gap: 0px;
@@ -116,4 +173,173 @@ button:active {
   flex-wrap: wrap;
   justify-content: space-evenly;
 
+}
+.flex-horizon-stretch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+
+}
+
+.flex-right-item {
+  display: flex;
+  gap: 5px;
+  
+  
+}
+
+.fades {
+  opacity: 0%;
+  transform: translateY(-50px);
+}
+.fade-in {
+  opacity: 100%;
+  transition: opacity 1s, transform 1s;
+}
+
+
+.card-like {
+width: 45%;
+  background-color: rgb(0,0,0,0.5) ;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin:10px;
+  padding:10px;
+  /*flexbox*/
+  display:flex;
+  flex-direction: column;
+  gap:0px;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    margin:0;
+    padding:0;
+  }
+
+}
+
+#heads {
+  /*background*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("bg/grad2.png") ;
+  background-repeat: repeat;
+  top:0;
+  left:0;
+
+  height: 400px;
+ 
+  background-size: auto 100%;
+  position: absolute;
+  top:0vw;
+  left: 50%;
+  right:50%;
+  margin-left: -50vw;
+    margin-right: -50vw;
+
+  /*marquee*/
+  animation-name:marq;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+ 
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  /*others*/
+  overflow: hidden;
+}
+
+#navs{
+
+  /*background*/
+  background: url("bg/grad4.png") ;
+  background-repeat: repeat;
+  top:0;
+  left:0;
+
+  height: 50px;
+  width: 100%;
+  background-size: auto 100%;
+  position: fixed;
+  top:0vw;
+
+  font-family: sans-serif;
+
+ 
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+  /*others*/
+  overflow: hidden;
+}
+
+
+
+
+#load {
+  background-color: rgb(0,0,0,0.5) ;
+  position:fixed;
+  font-size: larger;
+
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  
+  border-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity:0%;
+  animation: faded-out 1s ease;
+
+  /*TODO:change this*/
+  pointer-events: none;
+}
+
+#carrot {
+  animation: faded-out 1s infinite;
+}
+
+
+@keyframes marq {
+    0%{
+      background-position-x: 0px;
+    }
+    100%{
+      background-position-x: 400px;
+    }
+  }
+@keyframes faded-in {
+  0%{
+    opacity: 0%;
+      transform: translateY(-50px);
+    }
+    100%{
+      opacity: 100%;
+      
+    }
+}
+
+@keyframes faded-out {
+  0%{
+    opacity: 100%;
+      
+    }
+    100%{
+      opacity: 0%;
+      
+    }
 }
