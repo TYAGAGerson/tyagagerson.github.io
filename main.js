@@ -31,7 +31,7 @@
     var execd=1;
     var time=0;
     
-    const str=["does nothing.","codes.","wants to help everyone.","will learn more.", "likes discrete math, physics, computer, etc.","is from Indonesia.","tries to win fairly.","wants to make a B3313 clone.","made yet another clone\nof this gimmick.","repeats again 'bout this typing."]
+    const str=["does nothing.","codes.","wants to help everyone.","will learn more.", "likes discrete math,\n physics, computer,\n etc.","is from Indonesia.","tries to win fairly.","made yet another clone\nof this gimmick.","repeats again 'bout this typing."]
     var gimmick_index=str.length-1;
     var thaInterval=1;
 
