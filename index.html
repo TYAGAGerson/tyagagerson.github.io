@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 
 
 <head>
@@ -9,7 +9,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <meta name="description" content="TyagaGerson / TYAGAGerson / tyagagerson is a username of a random person on GitHub, Discord, and other social medias.">
+  <meta name="description"
+    content="TyagaGerson / TYAGAGerson / tyagagerson is a username of a random person on GitHub, Discord, and other social medias.">
   <title>TyagaGerson's GH Main Website: It's Me</title>
 </head>
 
@@ -17,25 +18,48 @@
 
 
 <body>
+
   <header>
-    <nav id="navs" style="z-index: 2;">TyagaGerson's github website</nav>
+    <div id="load" style="z-index: 5;">
+      <h5> Loading... </h5>
+    </div>
+
+
+    <div id="nav-grid">
+      <label id="burger" style=" grid-area: 1 / 1 / 2 / 2; margin: auto;z-index: 11;">
+        <input type="checkbox" style="display: none;" id="burger-checkbox" />
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <div id="middle-nav" style="z-index: 10; grid-area: 1/2/2/3;">
+        <a class="no-anc" href="index.html">TyagaGerson's github website</a>
+      </div>
+
+    </div>
+    <menu id="nav-menu" role="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="taqfh/doc/index.html">Tux AQFH old docs, modified</a></li>
+      
+
+    </menu>
   </header>
 
 
   <!--img src="bg/grad1.png" style="width: 100%;height: 100px; position: relative; top:0;left:0;"</img-->
 
   <main>
-  <div style="height: 450px;">
-    <div id="heads" style="z-index: 1;">
-      <h1 style="animation: faded-in 1s ease;">Yes, it's me, TyagaGerson</h1>
-      <p style="opacity: 0%; animation: faded-in 1s ease forwards;animation-delay: 1s;text-align: center;">a person who
-        <abbr title="lol" id="gimmick">nothing.</abbr><span id="carrot">|</span></p>
+    <div style="height: 450px;">
+      <div id="heads" style="z-index: 1;">
+        <h1 style="animation: faded-in 1s ease;">Yes, it's me, TyagaGerson</h1>
+        <p style="opacity: 0%; animation: faded-in 1s ease forwards;animation-delay: 1s;text-align: center;">a person
+          who
+          <abbr title="lol" id="gimmick">nothing.</abbr><span id="carrot">|</span>
+        </p>
+      </div>
     </div>
-  </div>
 
-    <div id="load">
-      <h5> Loading... </h5>
-    </div>
+
 
 
 
@@ -48,7 +72,7 @@
             modern system + some control and naming changes
           </li>
           <li>
-            <a href="https://github.com/TYAGAGerson/badfsm"> bad finite state machine implementation</a> 
+            <a href="https://github.com/TYAGAGerson/badfsm"> bad finite state machine implementation</a>
           </li>
           <li>
             some miscellaneous and delayed...
@@ -58,23 +82,34 @@
             soon
           </li>
         </menu>
-                  <a href="https://github.com/TYAGAGerson/"> still curious?</a> 
+        <a href="https://github.com/TYAGAGerson/"> still curious?</a>
       </div>
       <legend
         style="background-color: green; font-family: monospace; font-size: large; padding-block: 2px; padding-inline: 4px; box-shadow: /*inset 2px 2px 2px 1px rgba(0,0,0,0.5),*/4px 4px rgba(0,0,0,0.5) ; word-break: break-all">
         LOOK AT THIS </legend>
     </fieldset>
 
-    <fieldset class="openable">
-      <label><input type="checkbox" /> My Old Scratch Games</label>
-      <div class="flex-horizon-stretch">
+
+    <fieldset class="slim">
+      <h1>
+        My Old Scratch Games
+      </h1>
+      <p style="text-align: center;">
+        here's my old Scratch Games. Beware that some of them are cringe and buggy.
+      </p>
+      <legend
+        style="background-color: red; font-family: monospace; font-size: large; padding-block: 2px; padding-inline: 4px; box-shadow: /*inset 2px 2px 2px 1px rgba(0,0,0,0.5),*/4px 4px rgba(0,0,0,0.5) ;word-break: break-all">
+        UNMAINTAINED </legend>
+
+      <div class="flex-horizon-stretch " id="autoscr1"
+        style="flex-wrap: nowrap; width: 100; overflow-x: auto; scroll-timeline-axis: x;">
         <div class="card-like">
           <img src="scratch/img/2kl.png" class="old-game-img">
           <h4>2 Game Kearifan Lokal Flores</h4>
           <p>"2 Game Kearifan Lokal Flores" is a game consists of 2 minigames<br> that simulate traditional activity:
           </p>
 
-          <ol>
+          <details>
 
             <li>
               <h5>Bubu</h5>
@@ -84,7 +119,7 @@
               <h5>Rangku Alu</h5>
               <p>A traditional game where the player jump over the grid of obstacles</p>
             </li>
-          </ol>
+          </details>
 
           <button style="margin-top: auto;"
             onclick="window.open('https://scratch.mit.edu/projects/1163553556/','_blank')">Play Now</button>
@@ -95,12 +130,12 @@
           <h4>Garsimo's AI Story</h4>
           <p>"Garsimo's AI Story is a story game made for IKCC Competition 2024<br> about Garsimo learning and educating
             AI to other people.</p>
-          <small>(and I got rank #7)</small>
+          <!--small>(and I got rank #7)</small-->
 
 
 
           <button style="margin-top: auto;"
-            onclick=" window.open('https://scratch.mit.edu/projects/1163553556/','_blank')">Play Now</button>
+            onclick=" window.open('https://scratch.mit.edu/projects/1074454392/','_blank')">Play Now</button>
           <!--button>Learn More</button-->
         </div>
 
@@ -127,43 +162,43 @@
           <button onclick=" window.open('https://scratch.mit.edu/users/TyagaGerson/','_blank')">Search My Games</button>
           <!--button>Learn More</button-->
         </div>
-
       </div>
 
-
-
-
-      <legend
-        style="background-color: red; font-family: monospace; font-size: large; padding-block: 2px; padding-inline: 4px; box-shadow: /*inset 2px 2px 2px 1px rgba(0,0,0,0.5),*/4px 4px rgba(0,0,0,0.5) ;word-break: break-all">
-        UNMAINTAINED </legend>
     </fieldset>
-    <h1 style="text-align: center;"class="fades">Achievements</h1>
-    <details style="text-align: center;" class="fades">
-      <summary><small style="text-align: center;font-family: 'Courier New', Courier, monospace;">open me</small></summary>   
-    <p style="text-align: center;font-family: 'Courier New', Courier, monospace;">Well, uh, I DO have some achievements in recent years. BUT FOR PRIVACY REASONS I DO NOT SHOW MY ACHIEVEMENTS IN THIS WEBSITE.</p>
-      </details>
+
+
+
+
+
+
     <h3 class="fades">Seems Nothing, Huh?</h3>
-    
+
     <p class="fades">yes, and I'll fill/decorate this website with something cool.</p>
-    
-    
+
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
 
-
+    <section>
+      <div class="card-like floating prop-hidden" id="warnbox">
+        <h3 style="margin: 0;">not implemented</h3>
+        <p> not implemented yet</p>
+        <button onclick="hidebox(document.getElementById('warnbox'))">OK</button>
+      </div>
+    </section>
   </main>
 
   <footer>
 
-    <span class="flex-horizon" style="align-items: center; justify-content: space-between; width: 100%;" >
+    <span class="flex-horizon" style="align-items: center; justify-content: space-between; width: 100%;">
       <small style="font-family: sans-serif; justify-self:flex-start;">This website is made by TyagaGerson with some
         content derived or copied from other people.</small>
       <span class="flex-right-item">
         <small><a href="https://github.com/TYAGAGerson/tyagagerson.github.io/issues">Report a bug</a></small>
-        
+
       </span>
     </span>
   </footer>
