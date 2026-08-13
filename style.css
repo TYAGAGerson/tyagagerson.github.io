@@ -423,7 +423,7 @@ margin:0;
 }
 
 #nav-grid{
-  background: url("bg/grad4.png") ;
+  background: linear-gradient(0deg,dodgerblue,teal);
   background-repeat: repeat;
   position: fixed;
   top:0;
