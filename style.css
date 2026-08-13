@@ -68,15 +68,15 @@ h1 {
 
 button {
   cursor: pointer;
-  border-width: 5px;
+  border-width: 3px;
   border-color: chocolate;
-  padding-inline: 5px;
-  padding-block: 5px;
+  padding-inline: 10px;
+  padding-block: 10px;
   margin-right: 0%;
   color: white;
   font-size: medium;
-  border-style: outset;
-  background: transparent;
+  border-style: solid;
+  background: orange;
   font-family: "Sans-serif";
   border-radius: 50px;
 
@@ -87,15 +87,15 @@ button {
 .link-button {
   cursor: pointer;
   text-decoration: none;
-  border-width: 5px;
+  border-width:1px;
   border-color: chocolate;
-  padding-inline: 5px;
-  padding-block: 5px;
+  padding-inline: 10px;
+  padding-block: 10px;
   margin-right: 0%;
   color: white;
   font-size: medium;
   border-style: outset;
-  background: transparent;
+  background: orange;
   font-family: "Sans-serif";
   border-radius: 50px;
 
@@ -132,10 +132,11 @@ button {
 
 
 button:hover {
-  background-image: url("taqfh/doc/marble.png");
+  background: white;
   transition: box-shadow 0.5s, border-color 0.5s;
-  border-color: white;
+  border-color: grey;
   border-style: solid;
+  color:black;
 
   box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.25);
 }
@@ -143,7 +144,9 @@ button:hover {
 
 
 button:active {
-  background-image: url("taqfh/doc/Penguin.png");
+  color:white;
+  background: chocolate;
+  border-color: orange;
   transition: box-shadow 0.1s;
   border-style: inset;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
