@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <head>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
   </link>
   <link rel="icon" type="image/x-icon" href="me_3.jpg">
   </link>
@@ -21,15 +21,64 @@
         <div class="bar"></div>
       </label>
       <div id="middle-nav" style="z-index: 10; grid-area: 1/2/2/3;">
-        <a class="no-anc" href="index.html">TyagaGerson's github website</a>
+        <a class="no-anc" href="index.html">TyagaGerson - Lat tabel SPU</a>
       </div>
 
     </div>
     <menu id="nav-menu" role="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="taqfh/doc/index.html">Tux AQFH old docs, modified</a></li>
-      
+      <li><a href="index.html">situs gajelas, gausah diklik</a></li>
+      <!--li><a href="taqfh/doc/index.html">situs jadul gajelas</a></li-->
+      <li><a href="map.html">lat spu</a></li>
 
     </menu>
   </header>
+  <main>
+    <div style="height: 50px;">
+      
+    </div>
+    <div class="card-like2">
+        <!--span>1.</span>
+        <br-->
+        <p>
+        <span class="a2">H</span>
+        </p>
+    </div>
+    
+    <div class="flex-horizon flex1items" style="height: fit-content;">
+        <div class="card-like2 link-button choice">
+        56
+        </div>
+        <div class="card-like2 link-button choice">
+        31
+        </div>
+        <div class="card-like2 link-button choice">
+        37
+        </div>
+        <div class="card-like2 link-button choice">
+        95
+        </div>
+</div>
+<input type="text" placeholder="scrabble here" class="card-like2" style="color:white;">
+<div class="link-button card-like2 reroll-decor" onclick="reset_ch();renew();">
+        Reroll
+        </div>
+
+        </main>
+<div class="flex-horizon flex1items" style="height: fit-content;">
+<div class="card-like2" >Nomor:<br><span id="att">1</span></div>
+<div class="card-like2 wrong" >Salah<br><span id="wa">0</span></div>
+<div class="card-like2 truth" >Benar<br><span id="ac">0</span></div>
+<div class="card-like2" style="background: orange;" >Skipped<br><span id="skip">0</span></div>
+</div>
+    <section>
+      <div class="modal-bg" id="warnbox">
+      <div class="card-like floating" >
+        <h3 style="margin: 10px;">Peringatan</h3>
+        <p style="font-size: 0.75em;">Golongan B juga dites kecuali bbrp. kasus.<ul style="font-size: 0.75em;"><li>VIIIB(8): gol. VIIIB ke-1</li><li>VIIIB(9): gol. VIIIB ke-2</li><li>VIIIB(10): gol. VIIIB ke-3</li></ul></p>
+        <button onclick="hidebox(document.getElementById('warnbox'))">OK</button>
+      </div>
+      </div>
+    </section>
+  
+  <script src="map.js"></script>
 </body>

@@ -89,6 +89,7 @@ function refresh() {
 
 function hidebox(elem){
     elem.classList.add("prop-hidden");
+    
 }
 
 function repl_str() {
